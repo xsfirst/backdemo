@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,user-scalable=no" name="viewport" >
+<title></title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="assets/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/easeljs-0.8.0.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.transit.min.js"></script>
+</head>
+
+<body>
+<div class="bot">
+    <div class="add"><img src="images/add.png" /></div>
+    <div class="logo"><img src="images/logo.png" /></div>
+</div>
+
+<div class="menu">
+    <a href="index.html">首页</a>
+    <div class="line"></div>
+    <a href="rule.html">活动说明</a>
+    <div class="line"></div>
+    <a href="rank.html" class="on">排行榜</a>
+</div>
+
+<div class="rank">
+    <div class="bg"><img src="images/resultbg.jpg" /></div>
+    <div class="bar"></div>
+    <div class="rankbox">
+        <div class="ranktit">昨日TOP10排行榜</div>
+        <table class="ranktable"  border="0"  cellspacing="0" cellpadding="0">
+            <tr class="line1">
+                <td>排名</td>
+                <td>姓名</td>
+                <td>金币数</td>
+                <td>电话</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+            <tr class="last">
+                <td>10</td>
+                <td>王**</td>
+                <td>1658</td>
+                <td>13XXXXXXX12</td>
+            </tr>
+        </table>
+        <div class="rankinfo">
+            <div class="ranktip1 disnone">
+                <font>您当周最高得分为：<div>XX</div>枚金币</font>
+                <br/>排名前1000名就有机会赢取Apple Watch！
+                <br/><span>*榜单每日X点更新，仅作参考</span>
+            </div>
+            <div class="ranktip2 disnone">
+                <font>你的成绩估计被外星人吃掉了！<br/>快去玩游戏拿回成绩！</font>
+                <br/>排名前1000名就有机会赢取Apple Watch！
+                <br/><span>*榜单每日X点更新，仅作参考</span>
+            </div>
+            <div class="ranktip3 disnone">
+                <font>成绩都这么好？榜单难上啊，不信试试看！</font>
+                <br/>排名前1000名就有机会赢取Apple Watch！
+                <br/><span>*榜单每日X点更新，仅作参考</span>
+            </div>
+            <div class="end">
+                <img style="margin-top: 10px;" src="images/end.png" />
+            </div>
+        </div>
+        <!--<div class="ranktip">-->
+            <!--<div class="er">-->
+                <!--<img src="images/er.png" />-->
+                <!--<div class="ertip">长按二维码，即刻关注</div>-->
+            <!--</div>-->
+            <!--<div class="txt">-->
+                <!--或添加微信公众号-->
+                <!--<br/><b>交通银行微银行</b>-->
+                <!--<br/>或-->
+                <!--<br/><b>Bank-95559</b>-->
+                <!--<br/>持续关注中奖信息-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="ranktip">
+            <img src="images/erbg.png" />
+            <div class="er"><img src="images/er.png" /></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var hei = $(window).height();
+        $('.rankbox').height(hei-115);
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,user-scalable=no" name="viewport" >
+<title></title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="assets/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/easeljs-0.8.0.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="assets/touch-0.2.14.min.js"></script>
+    <script type="text/javascript" src="assets/myjsnew.js"></script>
+
+</head>
+
+<body>
+<div class="bot">
+    <div class="add"><img src="images/add.png" /></div>
+    <div class="logo"><img src="images/logo.png" /></div>
+</div>
+
+<div class="menu">
+    <a href="index.html">首页</a>
+    <div class="line"></div>
+    <a href="rule.html">活动说明</a>
+    <div class="line"></div>
+    <a href="rank.html">排行榜</a>
+</div>
+
+<div class="idpage">
+    <div class="bg1">
+        <img src="images/idbg.jpg" />
+        <div class="idtit"><img src="images/idtit.png" /></div>
+    </div>
+
+    <div class="start"><img src="images/start.png" /></div>
+</div>
+
+<div class="introbg"></div>
+
+<div class="intro disnone">
+    <div class="howto">
+        <img class="howto1" src="images/howto1.png" />
+        <img class="howto2 disnone" src="images/howto2.png" />
+
+    </div>
+    <div class="intro-btn"><img src="images/howto-btn.png" /></div>
+    <div class="close"><img src="images/close.png" /></div>
+</div>
+
+<div class="game disnone">
+    <div class="bg"><img src="images/cavbg.png" /></div>
+    <div class="bar">
+        <span>库存神金车:</span>
+        <ul>
+            <li><img src="images/head2.png" /></li>
+            <li><img src="images/head2.png" /></li>
+            <li><img src="images/head2.png" /></li>
+        </ul>
+    </div>
+    <canvas id="tcs"></canvas>
+</div>
+
+<div class="score disnone">
+    <div class="bg"><img src="images/resultbg.jpg" /></div>
+    <div class="bar"></div>
+    <div class="score-box">
+        <div class="title">收获单</div>
+        <div class="sctb">
+            <table class="score-table"  border="0"  cellspacing="0" cellpadding="0">
+                <tr>
+                    <td><img class="icon" src="images/icon5.png" /></td>
+                    <td>徽章x<span class="hz">0</span></td>
+                    <td><img class="sc-btn" data-score="1" src="images/res-btn.png" data-name="pop5" /></td>
+                </tr>
+                <tr>
+                    <td><img class="icon" src="images/icon4.png" /></td>
+                    <td>算盘x<span class="sp">0</span></td>
+                    <td><img class="sc-btn" data-score="2" src="images/res-btn.png" data-name="pop4" /></td>
+                </tr>
+                <tr>
+                    <td><img class="icon" src="images/icon1.png" /></td>
+                    <td>宝箱x<span class="bx">0</span></td>
+                    <td><img class="sc-btn" data-score="5" src="images/res-btn.png" data-name="pop1" /></td>
+                </tr>
+                <tr>
+                    <td><img class="icon" src="images/icon3.png" /></td>
+                    <td>奏折x<span class="zz">0</span></td>
+                    <td><img class="sc-btn" data-score="10" src="images/res-btn.png" data-name="pop3" /></td>
+                </tr>
+                <tr>
+                    <td><img class="icon" src="images/icon2.png" /></td>
+                    <td>银票x<span class="yp">0</span></td>
+                    <td><img class="sc-btn" data-score="20" src="images/res-btn.png" data-name="pop2" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="total">金币数：<span>0</span></div>
+        <a class="sc-again" href="index.html"><img src="images/res-again.png" /></a>
+        <div class="sc-next"><img src="images/res-next.png" /></div>
+    </div>
+</div>
+
+<div class="info disnone">
+    <div class="bg"><img src="images/resultbg.jpg" /></div>
+    <div class="bar" style="z-index: 1001"></div>
+    <div class="infobox">
+        <div class="infotxt"><img src="images/infotxt.png" /></div>
+        <div class="name">姓 名<input /></div>
+        <div class="phone">电 话<input /></div>
+        <div class="btn"><div class="info-btn"><img src="images/info-btn.png" /></div></div>
+        <!--<div class="info-btn"><img src="images/info-btn.png" /></div>-->
+    </div>
+</div>
+
+<div class="infosuc disnone">
+    <div class="bg"><img src="images/resultbg.jpg" /></div>
+    <div class="bar"></div>
+    <div class="suc-txt">
+        <div class="title">提交成功</div>
+        <div class="txt">你手握2辆神金车呢！
+            <br/>快送给好友吧！
+            <br/>怎么送？老地方你懂的！</div>
+    </div>
+    <a class="suc-again" href="index.html"><img src="images/suc-again.png" /></a>
+</div>
+
+<div class="touchpart disnone" id="touchpart"></div>
+<div class="bank-tip"><img src="images/banktip.png" /></div>
+
+<div class="count-down disnone">
+    <div class="count-bg"><img src="images/djbg.png" /></div>
+    <div class="dj">
+        <img class="dj1" src="images/dj1.png" />
+        <img class="dj2" src="images/dj2.png" />
+        <img class="dj3" src="images/dj3.png" />
+    </div>
+</div>
+
+<div class="crazy disnone">
+    <div class="crazy-bg"><img src="images/crazy.png" /></div>
+    <div class="crazy-tit"><img src="images/crazytit.png" /></div>
+    <div class="cjdj">
+        <img class="cjdj1" src="images/dj1.png" />
+        <img class="cjdj2" src="images/dj2.png" />
+        <img class="cjdj3" src="images/dj3.png" />
+    </div>
+</div>
+
+<div class="danger"><img src="images/danger.png" /></div>
+
+<div class="die-havelife">
+    <div class="diebg"><img src="images/diebg.png" /></div>
+    <div class="die-h-txt1">地球太危险，财富得赶紧存！
+        <br/>还剩X辆神金车，且玩且珍惜啊！</div>
+    <div class="die-again">决战到天亮</div>
+    <div class="die-next">不玩了,兑换金币去</div>
+    <div class="die-h-txt2">*最终成绩为：
+        <br/>累计全部神金车所收集的财富。</div>
+</div>
+
+<div class="gg disnone">
+    <div class="ggbg"></div>
+    <div class="ggimg"><img src="images/gg.png" /></div>
+</div>
+
+<div class="pop disnone">
+    <img class="pop1 disnone" src="images/pop1.png" />
+    <img class="pop2 disnone" src="images/pop2.png" />
+    <img class="pop3 disnone" src="images/pop3.png" />
+    <img class="pop4 disnone" src="images/pop4.png" />
+    <img class="pop5 disnone" src="images/pop5.png" />
+    <div class="pop-btn"><img src="images/pop-btn.png" /></div>
+</div>
+<div class="popbg disnone"></div>
+
+<div class="json">{"hz":50,"sp":30,"bx":10,"zz":7,"yp":3}</div>
+
+<div class="bank"><img src="images/bank.png" /></div>
+
+<div class="black"></div>
+</body>
+</html>
